@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Sign In to ElBuhoEnseña
+            </div>
+            <div class="card-body">
+                <form (submit)="signIn()">
+                    <div class="form-group">
+                        <label for="email" class="mb-1">Email address</label>
+                        <input type="text" [(ngModel)]="user.email" name="Email address" class="form-control" required autofocus id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="mb-1 mt-3">Password</label>
+                        <input type="password" [(ngModel)]="user.password"  name="Password" class="form-control" required id="password">
+                    </div>
+                    <button type="submit" class="btn btn-success mt-3 col-12">
+                        Sign In
+                    </button>
+
+
+                </form>
+            </div> 
+        </div>
+
+
+    </div>
+
+</div>

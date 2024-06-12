@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-4 offset-md-2">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="form-group m-2">
+                        <input type="text" name="title" [(ngModel)]="buhoClass.title" placeholder="Clase" class="form-control" autofocus>
+                    </div>
+                    <div class="form-group m-2">
+                        <textarea name="description" [(ngModel)]="buhoClass.description" placeholder="Descripción" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group m-2">
+                        <input type="url" name="image" [(ngModel)]="buhoClass.image" placeholder="Imagen" class="form-control">
+                    </div>
+                    <button class="btn btn-success btn-block" (click)="edit ? updateBuhoClass() : saveNewBuhoClass()">
+                        Guardar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card card-body text-center" >
+            <img [src]="buhoClass.image == '' ? '/assets/noimage.jpg' : buhoClass.image" class="card-img-top">
+            <h3>{{buhoClass.id}}. {{buhoClass.title == '' ? 'Título de la clase' : buhoClass.title}}</h3>
+            <p>{{buhoClass.description == '' ? 'Escriba una descripción': buhoClass.description}}</p>
+            <p>{{buhoClass.created_at | date: 'yyyy-MM-dd'}} </p>
+        </div>
+    </div>
+</div>
