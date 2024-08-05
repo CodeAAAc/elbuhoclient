@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ClassFormComponent } from './components/class-form/class-form.component';
 import { ClassListComponent } from './components/class-list/class-list.component';
-import { SignInComponent } from './components/sign-in/sign-in.component';
 
 import { TokenIncerceptorService } from './services/token-incerceptor.service';
 
@@ -23,7 +22,6 @@ import { AuthGuard } from './auth.guard';
     NavigationComponent,
     ClassFormComponent,
     ClassListComponent,
-    SignInComponent
   ],
   imports: [
     BrowserModule,    
