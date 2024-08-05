@@ -27,7 +27,7 @@ const routes: Routes = [
   },
   {
     path: 'signIn',
-    component: SignInComponent
+    loadChildren: () => import('./sign/sign.module').then(x => x.SignModule)
   }
 
 ];
