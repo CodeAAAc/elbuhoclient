@@ -27,6 +27,10 @@ const routes: Routes = [
   {
     path: 'signIn',
     loadChildren: () => import('./sign/sign.module').then(x => x.SignModule)
+  },
+  {
+    path: 'Acerca-de-nosotros',
+    loadChildren: () => import('./acerca/acerca.module').then(x => x.AcercaModule)
   }
 
 ];
