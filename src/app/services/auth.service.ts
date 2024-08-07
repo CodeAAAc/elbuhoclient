@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  API_URI = "https://elbuhoenseña.com/api"
+  API_URI = "http://localhost:3000/api"
 
   constructor(private http: HttpClient, private router: Router) { }
 

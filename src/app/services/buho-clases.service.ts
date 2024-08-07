@@ -8,7 +8,7 @@ import {BuhoClass} from '../modules/BuhoClass';
 })
 export class BuhoClasesService {
   
-  API_URI = "https://elbuhoenseña.com/api"
+  API_URI = "http://localhost:3000/api"
 
   constructor(private http: HttpClient) { }
 
