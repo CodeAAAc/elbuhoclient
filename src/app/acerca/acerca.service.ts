@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AcercaService {
-  API_URI = "http://localhost:3000/api"
+  API_URI = "https://elbuhoenseña.com/api"
 
   constructor(private http: HttpClient) { }
 
